@@ -1,10 +1,8 @@
-define([
-  './constants/inline-element-names',
-  './constants/block-element-names',
-  'immutable'
-], function (inlineElementNames, blockElementNames, Immutable) {
+import inlineElementNames from './constants/inline-element-names';
+import blockElementNames from './constants/block-element-names';
+import Immutable from 'immutable';
 
-  'use strict';
+  
 
   function isBlockElement(node) {
     return blockElementNames.includes(node.nodeName);
@@ -174,7 +172,7 @@ define([
     });
   }
 
-  return {
+  export default {
     isInlineElement: isInlineElement,
     isBlockElement: isBlockElement,
     isEmptyInlineElement: isEmptyInlineElement,
@@ -198,4 +196,4 @@ define([
     hasContent: hasContent
   };
 
-});
+

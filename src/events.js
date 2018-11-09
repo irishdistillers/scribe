@@ -1,10 +1,10 @@
-define([], function() {
 
-  'use strict';
 
-  return {
+  
+
+  export default {
     contentChanged: "scribe:content-changed",
     legacyContentChanged: "content-changed",
     destroy: "scribe:destroy"
   };
-});
+

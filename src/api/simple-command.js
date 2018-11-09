@@ -1,8 +1,8 @@
-define(function () {
 
-  'use strict';
 
-  return function (api, scribe) {
+  
+
+  export default function (api, scribe) {
     function SimpleCommand(commandName, nodeName) {
       scribe.api.Command.call(this, commandName);
 
@@ -22,4 +22,4 @@ define(function () {
     return SimpleCommand;
   };
 
-});
+

@@ -1,20 +1,13 @@
-define([
-  './set-root-p-element',
-  './formatters/html/enforce-p-elements',
-  './formatters/html/ensure-selectable-containers',
-  './inline-elements-mode'
-], function (
-  setRootPElement,
-  enforcePElements,
-  ensureSelectableContainers,
-  inlineElementsMode
-) {
-  'use strict';
+import setRootPElement from './set-root-p-element';
+import enforcePElements from './formatters/html/enforce-p-elements';
+import ensureSelectableContainers from './formatters/html/ensure-selectable-containers';
+import inlineElementsMode from './inline-elements-mode';
+  
 
-  return {
+  export default {
     setRootPElement: setRootPElement,
     enforcePElements: enforcePElements,
     ensureSelectableContainers: ensureSelectableContainers,
     inlineElementsMode: inlineElementsMode
   };
-});
+

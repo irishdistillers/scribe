@@ -1,8 +1,8 @@
-define(function () {
 
-  'use strict';
 
-  return function () {
+  
+
+  export default function () {
     return function (scribe) {
       var subscriptCommand = new scribe.api.Command('subscript');
 
@@ -10,4 +10,4 @@ define(function () {
     };
   };
 
-});
+

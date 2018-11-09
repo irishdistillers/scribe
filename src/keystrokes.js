@@ -1,6 +1,6 @@
-define(function() {
 
-  'use strict';
+
+  
 
   function isUndoKeyCombination(event) {
     return !event.shiftKey && (event.metaKey || (event.ctrlKey && !event.altKey)) && event.keyCode === 90;
@@ -10,8 +10,7 @@ define(function() {
     return event.shiftKey && (event.metaKey || (event.ctrlKey && !event.altKey)) && event.keyCode === 90;
   }
 
-  return {
+  export default {
     isUndoKeyCombination: isUndoKeyCombination,
     isRedoKeyCombination: isRedoKeyCombination
   };
-});

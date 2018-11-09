@@ -1,7 +1,5 @@
-define([
-  'immutable'
-], function (Immutable) {
-  'use strict';
+import Immutable from 'immutable';
+  
 
   function UndoManager(limit, undoScopeHost) {
     this._stack = Immutable.List();
@@ -94,5 +92,5 @@ define([
     }
   }
 
-  return UndoManager;
-});
+  export default UndoManager;
+

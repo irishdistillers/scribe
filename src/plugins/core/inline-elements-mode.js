@@ -1,6 +1,6 @@
-define(['../../node'], function (nodeHelpers) {
+import nodeHelpers from '../../node';
 
-  'use strict';
+  
 
   // TODO: abstract
   function hasContent(rootNode) {
@@ -19,7 +19,7 @@ define(['../../node'], function (nodeHelpers) {
     return false;
   }
 
-  return function () {
+  export default function () {
     return function (scribe) {
       /**
        * Firefox has a `insertBrOnReturn` command, but this is not a part of
@@ -128,4 +128,4 @@ define(['../../node'], function (nodeHelpers) {
       }
     };
   };
-});
+

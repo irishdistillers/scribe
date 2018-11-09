@@ -1,8 +1,8 @@
-define(function () {
 
-  'use strict';
 
-  return function () {
+  
+
+  export default function () {
     return function (scribe) {
       var createLinkCommand = new scribe.api.CommandPatch('createLink');
       scribe.commandPatches.createLink = createLinkCommand;
@@ -44,4 +44,4 @@ define(function () {
     };
   };
 
-});
+

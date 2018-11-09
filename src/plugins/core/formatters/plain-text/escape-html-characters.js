@@ -1,6 +1,6 @@
-define(function () {
 
-  'use strict';
+
+  
 
   /**
    * Converts `value` to a string if it is not one. An empty string is returned
@@ -82,10 +82,10 @@ define(function () {
       : string;
   }
 
-  return function () {
+  export default function () {
     return function (scribe) {
       scribe.registerPlainTextFormatter(escape);
     };
   };
 
-});
+

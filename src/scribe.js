@@ -1,34 +1,18 @@
-define([
-  './plugins/core/plugins',
-  './plugins/core/commands',
-  './plugins/core/formatters',
-  './plugins/core/events',
-  './plugins/core/patches',
-  './api',
-  './transaction-manager',
-  './undo-manager',
-  './event-emitter',
-  './node',
-  'immutable',
-  './config',
-  './events'
-], function (
-  plugins,
-  commands,
-  formatters,
-  events,
-  patches,
-  Api,
-  buildTransactionManager,
-  UndoManager,
-  EventEmitter,
-  nodeHelpers,
-  Immutable,
-  config,
-  eventNames
-) {
+import plugins from './plugins/core/plugins';
+import commands from './plugins/core/commands';
+import formatters from './plugins/core/formatters';
+import events from './plugins/core/events';
+import patches from './plugins/core/patches';
+import Api from './api';
+import buildTransactionManager from './transaction-manager';
+import UndoManager from './undo-manager';
+import EventEmitter from './event-emitter';
+import nodeHelpers from './node';
+import Immutable from 'immutable';
+import config from './config';
+import eventNames from './events';
 
-  'use strict';
+  
 
   function Scribe(el, options) {
     EventEmitter.call(this);
@@ -345,6 +329,6 @@ define([
     }, html);
   };
 
-  return Scribe;
+  export default Scribe;
 
-});
+

@@ -1,10 +1,5 @@
-define([
-    '../../../../node',
-    'immutable'
-  ], function (
-    nodeHelpers,
-    Immutable
-  ) {
+import nodeHelpers from '../../../../node';
+import Immutable from 'immutable';
 
   /**
    * Chrome and Firefox: All elements need to contain either text or a `<br>` to
@@ -12,7 +7,7 @@ define([
    * CSS(?), as per: http://jsbin.com/gulob/2/edit?html,css,js,output)
    */
 
-  'use strict';
+  
 
   // http://www.w3.org/TR/html-markup/syntax.html#syntax-elements
   var html5VoidElements = Immutable.Set.of('AREA', 'BASE', 'BR', 'COL', 'COMMAND', 'EMBED', 'HR', 'IMG', 'INPUT', 'KEYGEN', 'LINK', 'META', 'PARAM', 'SOURCE', 'TRACK', 'WBR');
@@ -64,7 +59,7 @@ define([
     }
   }
 
-  return function () {
+  export default function () {
     return function (scribe) {
 
       scribe.registerHTMLFormatter('normalize', function (html) {
@@ -79,4 +74,4 @@ define([
     };
   };
 
-});
+

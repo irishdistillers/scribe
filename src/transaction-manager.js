@@ -1,10 +1,8 @@
-define([
-  './events'
-  ], function (events) {
+import events from './events';
 
-  'use strict';
+  
 
-  return function (scribe) {
+  export default function (scribe) {
     function TransactionManager() {
       this.history = [];
     }
@@ -41,4 +39,4 @@ define([
 
     return TransactionManager;
   };
-});
+

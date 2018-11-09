@@ -1,13 +1,13 @@
-define(function () {
+
 
   /**
    * Sets the default content of the scribe so that each carriage return creates
    * a P.
    */
 
-  'use strict';
+  
 
-  return function () {
+  export default function () {
     return function (scribe) {
       // The content might have already been set, in which case we don't want
       // to apply.
@@ -22,4 +22,4 @@ define(function () {
     };
   };
 
-});
+

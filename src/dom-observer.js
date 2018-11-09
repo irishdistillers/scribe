@@ -1,7 +1,5 @@
-define([
-  './node',
-  './mutations'
-], function (nodeHelpers, mutations) {
+import nodeHelpers from './node';
+import mutations from './mutations';
 
   var maybeWindow = typeof window === 'object' ? window : undefined;
 
@@ -50,5 +48,5 @@ define([
     return observer;
   }
 
-  return observeDomChanges;
-});
+  export default observeDomChanges;
+

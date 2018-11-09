@@ -1,8 +1,8 @@
-define(function () {
 
-  'use strict';
 
-  return function () {
+  
+
+  export default function () {
     return function (scribe) {
       var boldCommand = new scribe.api.CommandPatch('bold');
 
@@ -26,4 +26,4 @@ define(function () {
     };
   };
 
-});
+

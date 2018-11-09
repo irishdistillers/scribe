@@ -1,6 +1,6 @@
-define(['immutable'], function (Immutable) {
+import Immutable from 'immutable';
 
-  'use strict';
+  
 
   // TODO: once
   // TODO: unit test
@@ -39,6 +39,6 @@ define(['immutable'], function (Immutable) {
     }
   };
 
-  return EventEmitter;
+  export default EventEmitter;
 
-});
+

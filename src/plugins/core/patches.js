@@ -1,20 +1,10 @@
-define([
-  './patches/commands/bold',
-  './patches/commands/indent',
-  './patches/commands/insert-html',
-  './patches/commands/insert-list',
-  './patches/commands/outdent',
-  './patches/commands/create-link',
-  './patches/events'
-], function (
-  boldCommand,
-  indentCommand,
-  insertHTMLCommand,
-  insertListCommands,
-  outdentCommand,
-  createLinkCommand,
-  events
-) {
+import boldCommand from './patches/commands/bold';
+import indentCommand from './patches/commands/indent';
+import insertHTMLCommand from './patches/commands/insert-html';
+import insertListCommands from './patches/commands/insert-list';
+import outdentCommand from './patches/commands/outdent';
+import createLinkCommand from './patches/commands/create-link';
+import events from './patches/events';
 
   /**
    * Command patches browser inconsistencies. They do not perform core features
@@ -22,9 +12,9 @@ define([
    * applying/unapplying commands — that is the job of the core commands.
    */
 
-  'use strict';
+  
 
-  return {
+  export default {
     commands: {
       bold: boldCommand,
       indent: indentCommand,
@@ -36,4 +26,4 @@ define([
     events: events
   };
 
-});
+

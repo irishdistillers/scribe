@@ -1,12 +1,12 @@
-define(function () {
+
 
   /**
    * Prevent Chrome from removing formatting of BLOCKQUOTE contents.
    */
 
-  'use strict';
+  
 
-  return function () {
+  export default function () {
     return function (scribe) {
       var nodeHelpers = scribe.node;
       var outdentCommand = new scribe.api.CommandPatch('outdent');
@@ -90,4 +90,4 @@ define(function () {
     };
   };
 
-});
+

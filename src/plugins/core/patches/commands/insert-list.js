@@ -1,8 +1,8 @@
-define([], function () {
 
-  'use strict';
 
-  return function () {
+  
+
+  export default function () {
     return function (scribe) {
       var nodeHelpers = scribe.node;
 
@@ -89,4 +89,4 @@ define([], function () {
     };
   };
 
-});
+

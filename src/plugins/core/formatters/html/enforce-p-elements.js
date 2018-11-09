@@ -1,6 +1,4 @@
-define([
-  'immutable'
-], function (Immutable) {
+import Immutable from 'immutable';
 
   /**
    * Chrome and Firefox: Upon pressing backspace inside of a P, the
@@ -17,9 +15,9 @@ define([
    * that we do not end up in a pristine state.
    */
 
-  'use strict';
+  
 
-  return function () {
+  export default function () {
     return function (scribe) {
       var nodeHelpers = scribe.node;
 
@@ -79,4 +77,4 @@ define([
     };
   };
 
-});
+

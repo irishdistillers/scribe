@@ -1,10 +1,8 @@
-define([
-  '../../../keystrokes'
-], function (keystrokes) {
+import keystrokes from '../../../keystrokes';
 
-  'use strict';
+  
 
-  return function () {
+  export default function () {
     return function (scribe) {
       var undoCommand = new scribe.api.Command('undo');
 
@@ -29,4 +27,4 @@ define([
     };
   };
 
-});
+

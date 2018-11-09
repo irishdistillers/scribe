@@ -1,4 +1,4 @@
-define([], function() {
+
 
   function determineMutationObserver(window) {
     // This enables server side rendering
@@ -16,7 +16,7 @@ define([], function() {
     }
   }
 
-  return {
+  export default {
     determineMutationObserver: determineMutationObserver
   };
-});
+
